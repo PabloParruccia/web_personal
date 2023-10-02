@@ -1,0 +1,87 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: darkslategray;
+    color: white;
+    line-height: 1.6;   /*para que este en la misma linea */
+    margin: 0;
+    padding: 0;
+    font-size: 10;
+}
+header {
+    padding: 20px;
+}
+   
+.Parrafo1 {
+    color: greenyellow;
+    font-size: 18px;
+}
+.Parrafo2 {
+    color: greenyellow;
+    font-size: 18px;
+}
+.Parrafo3 {
+    color: greenyellow;
+    font-size: 18px;
+}
+/* .link1 {
+    color: greenyellow;
+    text-decoration: none;
+     display: flex;
+    justify-content: center;
+}
+.link2 {
+    color: greenyellow;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+} */
+.a1{
+    color: greenyellow;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    
+} 
+h1 {
+    display: flex;
+    font-size: 35px;
+}
+footer {
+    color: greenyellow;
+    padding: 10px;
+   }
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    body {
+    font-size: 16px;
+    }
+    header, section, footer {
+    padding: 10px;
+    }
+   }
+   
+section {
+    margin: 20px;
+   }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+#Habilidades ol li{
+    color: greenyellow;
+
+}
+#contacto address{
+    color: greenyellow;
+
+}
