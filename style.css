@@ -6,63 +6,16 @@ body{
     margin: 0;
     padding: 0;
     font-size: 10;
-}
-header {
-    padding: 20px;
-}
-   
-.Parrafo1 {
-    color: greenyellow;
-    font-size: 18px;
-}
-.Parrafo2 {
-    color: greenyellow;
-    font-size: 18px;
-}
-.Parrafo3 {
-    color: greenyellow;
-    font-size: 18px;
-}
-/* .link1 {
-    color: greenyellow;
-    text-decoration: none;
-     display: flex;
-    justify-content: center;
-}
-.link2 {
-    color: greenyellow;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-} */
-.a1{
-    color: greenyellow;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
     
-} 
-h1 {
-    display: flex;
-    font-size: 35px;
 }
-footer {
-    color: greenyellow;
-    padding: 10px;
-   }
-/* Estilos responsivos */
-@media (max-width: 600px) {
-    body {
-    font-size: 16px;
-    }
-    header, section, footer {
-    padding: 10px;
-    }
-   }
-   
-section {
-    margin: 20px;
-   }
+
+header {
+    background-color: darkslategray;
+    padding: 20px;
+    text-align: center;
+    
+}
+
 
 nav ul {
     list-style: none;
@@ -71,17 +24,129 @@ nav ul {
 }
 nav ul li a{
     color: white;
-    text-decoration: none;
+    text-decoration: none; /*sacar los links*/
 }
 nav ul li {
     display: inline;
     margin-right: 20px;
-}
-#Habilidades ol li{
-    color: greenyellow;
 
 }
-#contacto address{
-    color: greenyellow;
+/*Secciones*/
+
+#acerca_de_mi , #Habilidades  , #educacion , #formulario {
+  
+    display: block;
+    text-align: center;
+
 
 }
+
+#acerca_de_mi h2, #Habilidades h2 , #educacion h2, #formulario h2{
+    
+    text-align: center;
+}
+
+
+
+footer {
+    
+    
+    padding: 10px;
+    text-align: center;
+    position: center;
+    bottom: 0;
+    width: 100%;
+   }
+
+@media only screen and (max-width: 600px) {
+
+header, #acerca_de_mi #habilidades {
+    padding: 10px;
+}
+
+h1, h2 {
+    font-size: 18px;
+}
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+
+header, #acerca_de_mi, #habilidades {
+    padding: 20px;
+}
+
+h1, h2 {
+    font-size: 22px;
+}
+}
+
+@media only screen and (min-width: 1025px) {
+
+header, #acerca_de_mi, #habilidades {
+    padding: 30px;
+}
+
+h1, h2 {
+    font-size: 28px;
+}
+}
+
+form {
+    text-align: left; /* alinea el texto a la izquierda*/
+    margin: auto; /*margen sea automatico*/
+    width: 300px; /*tamaño del form 300px*/
+}
+label {
+    font-weight: bold; /*letras en negrita*/
+}
+/*a todo lo siguiente le aplica el estipo del textarea*/
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%; /*ancho completo del contenedor*/
+    padding: 10px; /*espacio interno de 10px*/
+    margin: 5px 0 20px 0; /*margen en up-right-down-left*/
+    display: inline-block; /*permite dejarlo siempre visible*/
+    border: 1px solid #ccc; /*tamaño fijo de 1px de borde solido , linea solida*/
+    border-radius: 4px; /*cerrar las puntas de los textbox redondeadas*/
+}
+input[type="submit"] {
+    background-color: white;
+    color: black;
+    padding: 14px 20px;/*espacio entre el contenido y el borde*/
+    margin: 8px 0; /*espacio externo*/
+    border: none; /*no tenga borde*/
+    border-radius: 4px; /*si que tenga el radio*/
+    cursor: pointer; /*muestre el puntero la manito*/
+}
+/*Estilo para que cuando pasemos por ensima
+del boton este cambie de color/formato*/
+input[type="submit"]:hover{  /*evento al tipo de control el hover es un evento aplicar estilos solo cuando el mouse pasa por el elemento html*/
+        background-color: rgb(35, 59, 59);
+
+
+}/* */
+
+table {
+
+    justify-content: center;
+    margin: auto;
+
+
+   /*que se vea bien, que no se vean las lineas y demas */
+    text-align: center;
+    
+}
+
+th, td {
+  
+    padding: 8px; /* identificar los elementos una separacion*/
+  
+}
+
+th {
+    background-color: rgb(35, 59, 59);
+}
+
